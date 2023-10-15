@@ -5,49 +5,399 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-    
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container ">
+  <style>
+    button {
+      background-color: rgba(137, 43, 226, 0.77);
+      color: white;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      display: inline-block;
+      text-align: center;
+      padding: 15px 32px;
+    }
 
-      <a class="navbar-brand " href="#"><img src="./images/logo.png" alt="" height="70" width="300"> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">COURSES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">OUR PLACEMENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">GALLERY</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-          
-        
+    .btn {
+      background-color: rgba(137, 43, 226, 0.77);
+      color: white;
+
+    }
+
+    input {
+      border: none;
+    }
+
+    .nav {
+      background: purple;
+      color: white;
+    }
+
+    span {
+      color: rgba(137, 43, 226, 0.597);
+    }
+
+    .col {
+      color: blueviolet;
+    }
+
+    .last {
+      background-color: purple;
+      color: white;
+    }
+
+    .hov:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+  </style>
+</head>
+
+<body>
+  <!--  -->
+  <div class="row  p-2 border nav ">
+    <div class="col-6 ">
+      <h5>Have any question? +91 8086 651 651</h5>
+    </div>
+    <div class="col-6 text-end">
+      <h5> +91 8086 651 651 | contact@luminartechnolab.com</h5>
+    </div>
+  </div>
+
+
+  <!--  -->
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container ">
+
+        <a class="navbar-brand " href="#"><img src="./images/logo.png" alt="" width="200"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR PLACEMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </div>
         </ul>
-       
+      </div>
+  </div>
+  </nav>
+  </div>
+  <!--  -->
+  <div id="carouselExampleCaptions" class="carousel slide ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active ">
+        <img src="./images/656c957e-82bf-4296-92b6-180ea8b90d55.jpg" class="d-block  w-100 " alt="..." height="600px">
+        <div class="carousel-caption d-none d-md-block text-start ">
+          <h1>Kerala's No.1 IT Finishing school 100% Placement Assistance</h1>
+          <p>We at LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like BIG
+            DATA,Data science,Machine learning,PYTHON,Software testing.</p>
+          <BUtton>VIEW COURSES</BUtton>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/5ec07b35-feab-4f80-a535-1713e1ad6429.jpg" class="d-block  w-100 carousel" alt="..."
+          height="600px">
+        <div class="carousel-caption d-none d-md-block text-start ">
+          <h1>Kerala's No.1 IT Finishing school 100% Placement Assistance</h1>
+          <p>We at LUMINAR TECHNOLAB offers best software training and placement in emerging technologies like Big Data,
+            Hadoop,Spark,Data scince,Machine Learning,Deep Learning and AI</p>
+          <BUtton>VIEW COURSES</BUtton>
+        </div>
       </div>
     </div>
-  </nav>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <br>
+  </div>
+  <!--  -->
+  <!-- Button trigger modal -->
+  <button type="button" class="btn m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Get Training Quote For Free
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-body ">
+          <div class="text-end">
+            <button type="button " class=" btn-close pb-5 " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h1 class="modal-title fs-4 mb-5 text-center  " id="exampleModalLabel">Get Training Quote For Free</h1>
+          <div>
+            <form action="">
+              <input type="text" id="" placeholder="Name"><br>
+              <hr>
+              <input type="email" id="" placeholder="Email"><br>
+              <hr>
+              <input type="tel" id="" placeholder="Phone Number"><br>
+              <hr>
+              <select name="" id="">
+                <option value="">Select course interested in</option>
+                <option value="">Data science </option>
+                <option value="">Python</option>
+                <option value="">Software testing</option>
+                <option value="">MEARN</option>
+                <OPtion>Business Analytics</OPtion>
+              </select><br>
+              <hr>
+              <input type="text" id="" placeholder="City"><br>
+              <hr>
+              <input type="text" id="" placeholder="Comments"><br>
+              <hr>
+            </form>
+          </div>
+          <button type="button" class="btn  ">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--  -->
+
+
+  <div class="row m-5 p-2  ">
+    <div class="col-lg-6  ">
+      <h3>Luminar Technolab Pvt Ltd</h3>
+      <h4>CIN:U80220KL2021PTC071578</h4>
+      <p>Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced
+        level
+        software training to Students and by helping them to get placed in IT companies. We are a team of IT
+        professionals who have experience in IT sector for more than 15 plus years. Our fresher's career foster
+        programs
+        are Big Data Training, Data Science Training, Data Analytics Training, Python Training, Software Testing
+        Training & Selenium Training in Cochin, Kerala are designed in such a way to match with the current industry
+        requirements. Our Vision is to provide 100% placements to students those who enroll with us for our
+        specialized
+        courses.</p><br>
+      <button>learn more</button>
+    </div>
+    <div class="col-6 text-center  "><img src="./images/qq.jpg" alt="" height="400px">
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class=" text-center col">
+    <h1> our <span>courses</span> </h1>
+  </div>
+
+  <!--  -->
+
+  <div class="row m-5 p-2 border hov ">
+    <div class="col-lg-6 "><img src="./images/data-science-1588143159.jpg" alt="" max width="100%" height="350px">
+    </div>
+
+    <div class="col-6">
+      <h3>DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD & TABLEAU </h3>
+      <p>Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine Learning, Deep
+        Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud</p>
+      <p>📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</p>
+      <p>⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day</p>
+      <p>🧑‍🏫 Course Fees: <a href="">view more</a></p>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class="card-group container ">
+    <div class="card me-3">
+      <img src="./images/python-1588143191.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Python Django - Angular- Full Stack Web Development Expert</h5>
+        <p class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST
+          API, Git, Angul...</p>
+        <p class="card-text"><small class="text-body-secondary"><button class="btn">view more</button></small></p>
+      </div>
+    </div>
+    <div class="card me-3">
+      <img src="./images/st-1588580359.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Software Testing Specialist</h5>
+        <p class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE, Selenium Web driver,
+          Selenium Advanced Web...</p>
+        <p class="card-text"><small class="text-body-secondary"><button class="btn">view more</button></small></p>
+      </div>
+    </div>
+    <div class="card me-3">
+      <img src="./images/ms-1623825586.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MEARN Stack Web Development Expert - Angular & React</h5>
+        <p class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL, Express.JS, Angular,
+          React.js and Node...</p>
+        <p class="card-text"><small class="text-body-secondary"><button class="btn">view more</button></small></p>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class=" text-center m-5">
+    <button>view all courses</button>
+  </div>
+
+  <!--  -->
+
+
+
+  <div class="row m-5 p-2 border bg-body-tertiary">
+    <div class="col-6 text-center col "><img src="./images/quotes.png" alt="" height="350px">
+      <h2>Testimonials</h2>
+    </div>
+    <div class="col-6 border-start ">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <p>I did the course of software testing from Luminar Technolab via online... Best place to learn software
+              testing.Rugma Mam and Sreedevi Mam were my teachers and they were very friendly and well knowledgeable.
+              They did teach us in an excellent way. They also provide recordings of every class..Teena Mam and Rahul
+              Sir were very sincere in guiding me.. They provide interviews even before the completion of the course. I
+              got placed in a reputed company with the help of them and I ll be ever thankful to Luminar Technolab..</p>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <p> think I must review the data science course offered by Luminar technolabs, kakkanadu. I came to know
+              about Luminar from one of my friends and I joined the couse 6 months before. The course touches almost all
+              areas of data science practically. As completing each areas or fundamentals, the instructors make sure
+              that we learned the concepts and able to reproduce the same by guiding us to do hands on projects on
+              it.project reviews are conducting periodically till the final demo. All these really helps us to improve
+              our knowledge on particular areas. I really appreciate their efforts to schedule online sessions during
+              COVID-19 circumstances. Guiding candidates for interviews/machine tests by talented and experienced
+              instructors specifically. Thank you luminar for the course offered.. And I must say that you may add on to
+              the curriculum for the betterment of the course.</p>
+          </div>
+          <div class="carousel-item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quisquam, quo deserunt labore, quidem
+              et veniam accusamus culpa exercitationem temporibus sit, possimus iusto laboriosam natus sunt aspernatur
+              autem quis vitae.</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class="row m-2 border last ">
+    <div class="col-3 mt-5 p-3 text-center  "></i><img src="./images/footer.png" alt="" max width="100%">
+      <div>
+        <i class="fa-brands fa-facebook me-2 mt-4 fs-3"></i>
+        <i class="fa-brands fa-instagram me-2 mt-4 fs-3"></i>
+        <i class="fa-brands fa-google-plus-g me-2 mt-4 fs-3"></i>
+        <i class="fa-brands fa-twitter me-2  mt-4 fs-3"></i>
+      </div>
+    </div>
+    <div class="col-3 mt-4 p-3">
+      <h3>TRAINING COURSES</h3><br>
+      <p>Data Science Training
+        Python Training
+        MEAN Stack Training
+        Artificial Intelligence Training
+        Software Testing Training
+        Digital Marketing Training
+        Power BI Training
+        Tableau Training
+        Php Training
+        Asp.net Training</p>
+    </div>
+    <div class="col-3 mt-4 p-3">
+      <h3>USEFUL LINKS</h3><br>
+      <p>Teachers & Staff
+        Our Courses
+        Courses Categories
+        Certification & Affiliation
+        Refund and Cancellation Policy
+        Terms & Conditions
+        Privacy Policy</p>
+    </div>
+    <div class="col-3 mt-4 p-3">
+      <h3>GET IN TOUCH</h3><br>
+      <p> +91 8086 651 651
+
+        +91 484 405 8886
+
+        contact@luminartechnolab.com
+        www.luminartechnolab.com
+        16/3262, First floor
+        Vallamattam Estate Seaport
+        Airport Road,
+        CSEZ P O Kakkanad Ernakulam KL 682037 IN</p>
+    </div>
+  </div>
+  </div>
+
+  <!--  -->
+
+  <div class="row mt-5  p-3 ">
+    <div class="col-6 ">
+      <h5>Copyright © Luminar Technolab 2020 | Developed by Deepnetsoft</h5>
+    </div>
+    <div class="col-6 text-end">
+      <h5>Privacy Policy, Terms & Conditions</h5>
+    </div>
+  </div>
+
+
+
 
 </body>
+<<<<<<< HEAD:nav.html
+
 </html>
+=======
+</html>
+>>>>>>> 337b31a4c912e61ffae3ddce33e6306288cb557e:index.html
